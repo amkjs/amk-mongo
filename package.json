@@ -1,0 +1,23 @@
+{
+  "name": "amk-mongo",
+  "version": "0.1.0",
+  "description": "mongodb adaptor for amkjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/amkjs/amk-mongo.git"
+  },
+  "keywords": [
+    "amk",
+    "mongodb"
+  ],
+  "author": "heinrich10",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amkjs/amk-mongo/issues"
+  },
+  "homepage": "https://github.com/amkjs/amk-mongo#readme"
+}
