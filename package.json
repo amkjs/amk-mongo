@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/amkjs/amk-mongo/issues"
   },
-  "homepage": "https://github.com/amkjs/amk-mongo#readme"
+  "homepage": "https://github.com/amkjs/amk-mongo#readme",
+  "dependencies": {
+    "mongodb": "^3.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-amk": "^0.1.0"
+  }
 }
