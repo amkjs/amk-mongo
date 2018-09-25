@@ -11,28 +11,28 @@ you can achieve this by choosing one of the options below:
 1. use [dotenv](https://github.com/motdotla/dotenv) to set the variables
 2. issue the command ``` export AMK_MONGO_USERNAME=username ```
 3. put it on the ``` .bashrc ``` or ```.bash_profile``` file
-4. for AMK_MONGO_HOSTS , it should be a string like '172.16.1.90:27017,172.16.1.91:27017,172.16.1.92:27017'
+4. for AMK_MONGO_HOSTS , it should be a string like '172.16.1.90:27017,172.16.1.91:27017,172.16.1.92:27017'. Each host is separated by the colon.
 
 ## Usage
 
 After setting up environment variables, inherit from this `amk-mongo`. refer to code snipet below:
 
-**users.js**
+**user.js**
 ```js
 const Mongo = require('amk-mongo');
-class Users extends Mongo {
+class User extends Mongo {
     constructor() {
-        super('users', 'dbname') // dbname is optional if the AMK_MONGO_DEFAULT_DATABASE has been set.
+        super('user', 'dbname') // dbname is optional if the AMK_MONGO_DEFAULT_DATABASE has been set.
     }
 }
-module.exports = Users
+module.exports = User
 ```
 
-using **users.js**
+using **user.js**
 ```js
-const Users = require('./users');
-const users = new Users();
-users.find({}, {limit: 30}).then( results => {
+const User = require('./user');
+const user = new User();
+user.find({}, {limit: 30}).then( results => {
     //will return a list of user object
 })
 ```
